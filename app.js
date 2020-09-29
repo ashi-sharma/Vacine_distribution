@@ -69,7 +69,7 @@ passport.use(new GoogleStrategy({
 ));
 
 app.get("/", function(req, res){
-  res.render("home");
+  res.render("firstPage");
 });
 
 app.get("/auth/google",
