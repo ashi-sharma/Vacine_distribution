@@ -72,6 +72,10 @@ app.get("/", function(req, res){
   res.render("firstPage");
 });
 
+app.get("/home", function(req, res){
+  res.render("home");
+});
+
 app.get("/auth/google",
   passport.authenticate('google', { scope: ["profile"] })
 );
